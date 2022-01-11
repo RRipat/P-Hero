@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+}
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.banner{
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    height: 100vh;
+    
+}
+.click{
+    outline: 0px;
+    padding: 10px 30px;
+    font-size: 15px;
+    background-color: #22bedd;
+    color: white;
+    border: 4px solid #22bedd;
+    cursor: pointer;
+    transition: .2s linear;
+}
+.click:hover{
+   background-color: transparent;
+    border: 4px solid #22bedd;
+}
+.banner-title{
+     font-size: 50px;
+     white-space: nowrap;
+     position: relative;
+     color: transparent;
+     line-height: 2;
+    
+    
+}
+.banner-title::before{
+    content: "Programming Hero";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #22bedd ;
+    animation: typing 4s linear infinite ;
+}
+.banner-text{
+    line-height: 2;
+    margin: 20px 0;
+}
+@keyframes typing{
+    0%{
+        content:'P|';
+    }
+    4%{
+        content:'Pr|';
+    }
+    8%{
+        content: 'Pro|';
+    }
+    12%{
+        content: 'Prog|';
+    }
+    16%{
+        content: 'Progr|';
+    }
+    20%{
+        content: 'Progra|';
+    }
+    24%{
+        content: 'Program|';
+    }
+
+    28%{
+        content: 'Programm|';
+    }
+    32%{
+        content: 'Programmi|';
+    }
+    36%{
+        content: 'Programmin|';
+    }
+    40%{
+        content: 'Programming|';
+    }
+    44%{
+        content: 'Programming |';
+    }
+    48%{
+        content: 'Programming H|';
+    }
+    52%{
+        content: 'Programming He|';
+    }
+    56%{
+        content: 'Programming Her|';
+    }
+    60%{
+        content: 'Programming Hero|';
+    }
+    64%,
+    83%
+    {
+        content: 'Programming Hero|';
+    }
+    84%{
+        content: 'Programming He|';
+    }
+    85%{
+        content: 'Programming H|';
+    }
+    86%{
+        content: 'Programming |';
+    }
+    87%{
+        content: 'Programming|';
+    }
+    88%{
+        content: 'Programmin|';
+    }
+    89%{
+        content: 'Programmi|';
+    }
+    90%{
+        content: 'Programm|';
+    }
+    91%{
+        content: 'Program|';
+    }
+    92%{
+        content: 'Progra|';
+    }
+    93%{
+        content: 'Progr';
+    }
+    94%{
+        content: 'Prog|';
+    }
+    95%{
+        content: 'Pro|';
+    }
+    96%{
+        content: 'Pr|';
+    }
+    97%{
+        content: 'P|';
+    }
+    98%{
+        content: '|';
+    }
+    99%{
+        content: '|';
+    }
+    100%{
+        content: "";
+    }
+}
+
+.banner-left{
+    color: white;
+    flex: 1;
+  
+    display: flex;
+    align-items: center;
+}
+.banner-right{
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+.banner-right img{
+    width: 80%;
+}
+.banner-right:hover{
+    border: 5px solid rgb(3, 131, 236);
+}
